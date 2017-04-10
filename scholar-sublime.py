@@ -8,7 +8,7 @@ class ScholarsublimeSearchPaperCommand(sublime_plugin.TextCommand):
             if selection.empty():
                 text = self.view.word(selection.begin())
             text = self.view.substr(selection)
-            url = "http://scholar.google.com/scholar?q=" + text
+            url = "https://academic.microsoft.com/#/search?iq=" + text
             webbrowser.open_new(url)
 
 
